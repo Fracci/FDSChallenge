@@ -33,12 +33,14 @@ try:
         # We create a copy and truncate the battle timeline to keep the output clean
         battle_for_display = first_battle.copy()
         #battle_for_display['battle_timeline'] = battle_for_display.get('battle_timeline', [])[:2] # Show only first 2 turns
-        
+
+        """
         # Use json.dumps for pretty-printing the dictionary
         print(json.dumps(battle_for_display, indent=4))
         if len(first_battle.get('battle_timeline', [])) > 3:
             print("    ...")
             print("    (battle_timeline has been truncated for display)")
+        """
 
 # Handle the error if the file is not found at the specified path
 except FileNotFoundError:
